@@ -1,0 +1,44 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Build and packaging output
+/build/
+/dist/
+*.egg
+*.egg-info/
+pip-wheel-metadata/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.hypothesis/
+
+# Coverage output
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Generated video captures
+/captures/
+
+# Logs and editor temporary files
+*.log
+*.swp
+
+# macOS
+.DS_Store

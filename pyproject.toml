@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resofetch"
+version = "0.1.0"
+description = "Inspect video metadata and capture random video frames."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["opencv-python-headless>=4.8"]
+
+[project.scripts]
+ResoFetch = "resoFetch:main"
+ResoFetchCapture = "capture_random_frame:main"
+
+[tool.setuptools]
+py-modules = ["resoFetch", "capture_random_frame"]
